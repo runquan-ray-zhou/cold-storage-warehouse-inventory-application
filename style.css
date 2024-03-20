@@ -3,6 +3,10 @@
     font-family: monospace;
 }
 
+body {
+    border: 1px solid grey;
+}
+
 h2 {
     font-size: 2em;
     color: purple;
