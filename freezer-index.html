@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Storage Warehouse App</title>
+    <link rel="icon" type="image/x-icon" href="/freezer/assets/ODS-StickersPacks_Frieza.png">
+    <link rel="stylesheet" href="freezer-style.css">
+    <script src="./freezer-main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="/freezer/assets/172-1723132_freezer-dragon-ball-head-hd-png-download.png" alt="header__logo">
+        </div>
+        <div class="header__right-">
+            <h1 class="header__right-text">Cold Storage Warehouse Inventory</h1>
+            <!-- <img class="header__background-img" src="#" alt="header__background-img"> -->
+            <nav class="header__right-navbar">
+                    <span class="header__right-navbar-about">About</span>
+                    <span class="header__right-navbar-how-">How To Use</span>
+                    <span class="header__right-navbar-help">Get Help</span>
+                    <span class="header__right-navbar-user">Switch User</span>
+                    <span class="header__right-avbar-log">Log in / Log out</span>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="product">
+            <div class="product__img-container">
+                <h2>Product Image</h2>
+                <img class ="product__img" src="/freezer/assets/Cartoons__Anime_Dragonball_Artboard_12-512.webp" alt="product__img">
+                <div class="warehouse-info">
+                    <h2 class="warehouse-info__header">Warehouse Info</h2>
+                    <input type="number">
+                    <label for="">:Current Temp</label>
+                    <input type="number" name="" id="">
+                    <label for="">:Capacity</label>
+                    <input type="number" name="" id="">
+                    <label for="">:Rack Space Availability</label>
+                </div>
+
+            </div>
+        </section>
+        <section class="inventory">
+            <div class="search-inventory">
+                <h2 class="search-inventory__header">Search Inventory</h2>
+                <form class="search-inventory__form">
+                <input id="searchName" class="search-inventory__form-name" name="searchName" type="text"/>
+                <label for="searchName">Product Name
+                </label>
+                <input id="searchCode" class="search-inventory__form-code" name="searchCode" type="number"/>
+                <label for="searchCode">Product Code
+                </label>
+                <input id="searchType" class="search-inventory__form-type" name="searchType" type="text"/>
+                <label for="searchType">Product Type
+                </label>
+                <input id="searchBrand" class="search-inventory__form-brand" name="searchBrand" type="text"/>
+                <label for="searchBrand">Product Brand
+                </label>
+                <input class="search-inventory__form-reset-button" type="button" value="Reset"/>
+                <input class="search-inventory__form-submit-button" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="add-inventory">
+                <h2 class="add-inventory__header">Add To Inventory</h2>
+                <form class="add-inventory__form">
+                    <input id="addName" class="add-inventory__form-name" name="addName" type="text"/>
+                    <label for="addName">Name
+                    </label>
+                    <input id="addCode" class="add-inventory__form-code" name="addCode" type="number"/>
+                    <label for="addCode">Code
+                    </label>
+                    <input id="addType" class="add-inventory__form-type" name="addType" type="text"/>
+                    <label for="addType">Type
+                    </label>
+                    <input id="addBrand" class="add-inventory__form-brand" name="addBrand" type="text"/>
+                    <label for="addBrand">Brand
+                    </label>
+                    <input id="addVendor" class="add-inventory__form-vendor" name="addVendor" type="text"/>
+                    <label for="addVendor">Vendor
+                    </label>
+                    <input id="addFDA" class="add-inventory__form-fda" name="addFDA" type="text"/>
+                    <label for="addFDA">FDA status
+                    </label>
+                    <input id="addCase" class="add-inventory__form-case" name="addCase" type="number"/>
+                    <label for="addCase">Case Count on Pallet
+                    </label>
+                    <input id="addLb" class="add-inventory__form-lb" name="addLb" type="number"/>
+                    <label for="addLb">lb per Case
+                    </label>
+                    <input id="addCost" class="add-inventory__form-cost" name="addCost" type="number"/>
+                    <label for="addCost">Cost per lb
+                    </label>
+                    <input id="addWeight" class="add-inventory__form-weight" name="addWeight" type="number"/>
+                    <label for="addWeight">Total Weight on Pallet
+                    </label>
+                    <input id="addTotal" class="add-inventory__form-total" name="addTotal" type="number"/>
+                    <label for="addTotal">Total Cost per Pallet
+                    </label>
+                    <input id="addLocation" class="add-inventory__form-location" name="addLocation" type="number"/>
+                    <label for="addLocation">Pallet Location
+                    </label>
+                    <input id="addPurchaser" class="add-inventory__form-purchaser" name="addPurchaser" type="text"/>
+                    <label for="addPurchaser">Purchaser
+                    </label>
+                    <input id="addPDate" class="add-inventory__form-pdate" name="addPDate" type="date"/>
+                    <label for="addPDate">Purchase date
+                    </label>
+                    <input id="addEDate" class="add-inventory__form-edate" name="addEDate" type="date"/>
+                    <label for="addEDate">Entry date
+                    </label>
+                    <input id="addXDate" class="add-inventory__form-xdate" name="addXDate" type="date"/>
+                    <label for="addXDate">Expire date
+                    </label>
+                    <input class="add-inventory__form-reset-button" type="button" value="Reset"/>
+                    <input class="add-inventory__form-submit-button" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <section class="inventory-result">
+            <div>
+                <h2 class="inventory-result__header">Selected Product Information</h2>
+                <div>Values</div>
+                <div>Search Results</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer__navbar">
+            <span>Export Selected</span>
+        </nav>
+    </footer>    
+</body>
+</html>
